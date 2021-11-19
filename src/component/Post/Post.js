@@ -6,7 +6,7 @@ const Post = () => {
   return (
     <div className="post">
       <div className="post-header">
-        <Avatar src="https://i.imgur.com/x4biPQW.png" className="me-3" alt="hshanto707" />
+        <Avatar src="" className="me-3" alt="" />
         <h3>hshanto707</h3>
       </div>
 
