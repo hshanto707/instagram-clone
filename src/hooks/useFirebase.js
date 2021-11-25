@@ -6,9 +6,8 @@ import {
   onAuthStateChanged,
   signOut
 } from "firebase/auth";
-import initializeAuthentication from "../Firebase/firebase.init";
-
-initializeAuthentication();
+import firebaseApp from '../Firebase/firebase.init';
+firebaseApp();
 
 const useFirebase = () => {
   const [user, setUser] = useState([]);
@@ -53,23 +52,3 @@ const useFirebase = () => {
 }
 
 export default useFirebase;
-
-// const logOut = () => {
-//   signOut(auth)
-//     .then(() => {
-//       setUser([]);
-//     })
-//     .finally(() => setIsLoading(false));
-// };
-
-// useEffect(() => {
-//   const unsubscribe = onAuthStateChanged(auth, (signedInUser) => {
-//     if (signedInUser) {
-//       setUser(signedInUser);
-//     } else {
-//       setUser({});
-//     }
-//     setIsLoading(false);
-//   });
-//   return () => unsubscribe;
-// }, []);

@@ -24,8 +24,7 @@ const Header = () => {
         )}
         {user.displayName && (
           <span className="text-dark">
-            {" "}
-            <span className="mx-3">Hi</span> {user.displayName}
+            <span className="ms-3">Hi</span> {user.displayName}
           </span>
         )}
       </div>
